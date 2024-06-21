@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Products List</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center"> <!--centers everything, spaces between each word and aligns it in the centre-->
+            <img src="logo.png" id="logo">
+            <div class="logo1"><a href='index.html' class="text-white">Music For All</a></div>
+            <nav>
+                <ul class="nav">    <!--for styling the navigation bar-->
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-light ml-3"><b>Toggle Dark Mode</b></button>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="mb-4">
+            <form id="addForm" class="form-inline"> <!--makes the elements apear in a row-->
+                <div class="form-group mr-2">
+                    <input type="text" id="productName" class="form-control" placeholder="Product Name" required> <!--form-control is for consistent look-->
+                </div>
+                <div class="form-group mr-2">
+                    <input type="text" id="productType" class="form-control" placeholder="Product Type" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+                
+                
+                <!-- Dropdown button creation -->
+                <div class="dropdown ml-2">
+                    <button id="btn2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btn2">
+                        
+                        <a class="dropdown-item" id="sortbyname" href="#">Name</a>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+        <section>
+            <table id="productTable" class="table table-striped">
+                <thead class="thead-dark"> <!--background collor of the table-->
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Body content of the table stored -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="bg-dark text-white mt-auto py-2">
+        <div class="container text-center">
+            <div class="logo mb-2">Music For All</div>
+            <p>&copy; 2024 Music For All. All rights reserved.</p>
+            <p>Follow us on social media:</p>
+            <div class="social">
+                <a href="https://www.facebook.com/?locale=el_GR" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=el" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

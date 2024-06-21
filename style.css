@@ -1,0 +1,254 @@
+body {
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}  
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Make sure its above other content */
+}
+ footer .logo {
+    font-size: 1.5rem;
+
+}
+
+header .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+
+header nav{
+    position: sticky;
+    z-index: 1000; /* above other content*/
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    position: sticky;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: -10px;
+    margin-bottom: 10px;
+}
+
+
+nav ul li a:hover {
+    box-shadow: 0 5px 0 0 rgb(78, 120, 133);
+    transition: 0.5s ease;
+}
+
+#logo{
+    border-radius: 5px;
+    height: 100px;
+}
+
+.logo1{
+    margin-left: -500px;
+    font-size: 30px;
+}
+
+main {
+    padding: 2rem;
+    flex-grow: 1;
+    padding-bottom: 60px;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    object-fit: cover;  /*ensures that the image covers the container without streching*/
+}
+
+#carousel-section{
+    animation: carousel1 1.5s linear;
+
+}
+
+@keyframes carousel1{
+    from{
+        transform: translateY(-500px);
+
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+body.dark-mode .card-content {
+    background-color: #121212;
+    border: none;
+    color: white;
+}
+
+
+form button:hover{
+    background-color: #525151 ;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+#avatar{
+    max-height: 500px;
+    max-width: 350px;
+    object-fit: cover;
+    border: none;
+    height: 500px;
+    width: 350px;
+    display: flex;
+    margin: auto;
+    animation: avatar1 1.5s linear;
+}
+
+@keyframes avatar1{
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+body.dark-mode .card{
+    background-color: #121212;
+    border: none;
+}
+
+.card{
+
+    border: none;
+}
+
+
+#contact-section {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+body.dark-mode main h1 {
+    color: white;
+
+}
+
+
+footer .social a {
+    color: #fff;
+    margin: 0 20px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.delete-btn:hover {
+    background-color: #525151;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+
+form #btn2 {
+    position: relative;
+    color: #00120B;
+    
+}
+form #btn2:hover {
+    color: white;
+    
+    
+    background-color: #35605A;
+}
+form #btn2 .dropdown-toggle::after {
+    content: none;
+}
+
+
+#darkModeToggle {
+    
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    
+}
+body.dark-mode {
+    background-color: #121212;
+    
+}
+
+
+
+body.dark-mode table, body.dark-mode th, body.dark-mode td {
+    border-color: #ffffff;
+    color: white;
+}

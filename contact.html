@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Contact Us - Music For All</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center"> <!--centers everything, spaces between each word and aligns it in the centre-->
+            <img src="logo.png" id="logo">
+            <div class="logo1"><a href='index.html' class="text-white">Music For All</a></div>
+            <nav>
+                <ul class="nav">    <!--for styling the navigation bar-->
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-light ml-3"><b>Toggle Dark Mode</b></button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- contact form using a table-->
+        <h1 class="text-center" >Contact Us:</h1>
+        <section id="contact-section"> 
+            
+            <form id="contactForm">
+                <table>
+                    <tr>   
+                        <td><input type="text" id="username" placeholder="Username" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" id="email" placeholder="Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" id="phone" placeholder="Phone Number" required></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="message" rows="5" cols="20" placeholder="Your Message" required></textarea></td>
+                    </tr>
+                        
+                </table>
+                <button type="submit">Submit</button></td>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white mt-auto py-2">
+        <div class="container text-center">
+            <div class="logo mb-2">Music For All</div>
+            <p>&copy; 2024 Music For All. All rights reserved.</p>
+            <p>Follow us on social media:</p>
+            <div class="social">
+                <a href="https://www.facebook.com/?locale=el_GR" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=el" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
